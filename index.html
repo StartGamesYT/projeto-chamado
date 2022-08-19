@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="src/e-mail.py">
+</head>
+<body>
+    
+    
+    <header>
+
+        <a href="https://www.consultoriaorion.com/">
+            <p>Página Inicial</p>
+        </a>
+
+        <a href="#">
+            <p>Serviços</p>
+        </a>
+
+        <a href="#">
+            <p>Sobre</p>
+        </a>
+
+        <a href="#">
+            <p>Contato</p>
+        </a>
+
+    </header>
+
+    <main>
+
+        <form action="src/e-mail.py" method="post" >
+
+            <p>
+                <label for="email">
+
+                    E-mail <input type="email" name="iemail" id="email" required placeholder="e-mail@gmail.com" minlength="12" maxlength="40">
+
+                </label>
+            </p>
+
+            <p>
+                <label for="Usuario">
+                
+                    Usuario <input type="user" name="iuser" id="user" required placeholder="nome do usuario" minlength="12"
+                    maxlength="30">
+
+                </label>
+            </p>
+
+            <p>
+                <label for="empresa">
+
+                    Empresa <input type="text" name="iemp" id="emp" required placeholder="Orion" minlength="5" maxlength="30">
+
+                </label>
+            </p>
+
+            <p>
+                <label for="motivo">
+
+                    Motivo <input type="text" name="imoti" id="moti"  placeholder="quero um agendamento" minlength="30" maxlength="1000" required>
+
+                </label>
+            </p>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </form>
+
+    </main>
+
+</body>
+</html>
