@@ -5,7 +5,10 @@
 
 body {
 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
     background-image: url(../img/2017-03-25-09-30-33.jpg);
+
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -15,48 +18,120 @@ body {
 header {
 
     background-color: white;
-    justify-items: center;
-    justify-content: center;
-    position: relative;
-    display: flex;
-    height: 70px;
-    padding-top: 20px;
+    height: 50px;
+    height: 50px;
 
 }
 
-header > a {
+header > div >a > p {
 
+    color: orange;
+    text-decoration: solid;
+    font-size: 25px;
+    text-align: end;
+    padding-top: 10px;
+    padding-right: 15px;
+    cursor: pointer;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+a > p:hover {
+
+    color: red;
+
+}
+
+.box {
+
+    position: absolute;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+
+    border-radius: 15px;
+    transform: translate(-50% , -50%);
+
+    background-color: rgb(245, 93, 38);
+    color: white;
+}
+
+fieldset {
+
+    border: 3px solid rgba(255, 255, 0, 0.507);
     padding: 10px;
 
 }
 
-main {
-    
-    justify-content: center;
+legend {
 
-    height: 250px;
-    width: 300px;
-    padding: 10px;
-    margin: 150px;
-
-    background-color: rgba(255, 255, 255, 0.733);
-
-    justify-items: center;
-    position: relative;
-    align-items: center;
-
-    box-shadow: 2px 2px 12px 5px  rgba(0, 0, 0, 0.37);
+    border: 1px solid rgba(255, 255, 0, 0.507);
     border-radius: 5px;
-
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 0, 0.507);
 
 }
 
+.inputBox {
 
-main > form > p {
-
-    justify-items: center;
-    justify-content: center;
     position: relative;
-    padding: 10px;
+
+}
+
+.inputUser {
+
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+
+}
+
+.labelInput {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: .5px;
+
+}
+
+.inputUser:focus ~ .labelInput, 
+.inputUser:valid ~  .labelInput {
+
+    top: -20px;
+    font-size: 12px;
+    color: yellow;
+
+}
+
+#submit {
+
+    background-image: linear-gradient( to right, yellow, orange, red);
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+#submit:hover {
+
+    background-image: linear-gradient( to right, rgb(158, 158, 20), rgb(180, 122, 15), rgb(179, 14, 14));
 
 }

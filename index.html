@@ -6,74 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento</title>
     <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="src/e-mail.py">
 </head>
 <body>
-    
-    
+
     <header>
-
-        <a href="https://www.consultoriaorion.com/">
-            <p>Página Inicial</p>
-        </a>
-
-        <a href="#">
-            <p>Serviços</p>
-        </a>
-
-        <a href="#">
-            <p>Sobre</p>
-        </a>
-
-        <a href="#">
-            <p>Contato</p>
-        </a>
-
+        
+        <div>
+            <a href="https://www.consultoriaorion.com/">
+                <p><b>PAGINA INICIAL</b></p>
+            </a>
+        </div>
     </header>
 
-    <main>
+    <div class="box">
 
-        <form action="src/e-mail.py" method="post" >
+        <form action="" method="post" autocomplete="off">
 
-            <p>
-                <label for="email">
+            <fieldset>
 
-                    E-mail <input type="email" name="iemail" id="email" required placeholder="e-mail@gmail.com" minlength="12" maxlength="40">
+                <legend>
+                    <b>Agendamento</b>
+                </legend>
 
-                </label>
-            </p>
+                <br>
 
-            <p>
-                <label for="Usuario">
-                
-                    Usuario <input type="user" name="iuser" id="user" required placeholder="nome do usuario" minlength="12"
-                    maxlength="30">
+                <div class="inputBox" class="labelInput">
 
-                </label>
-            </p>
+                    <input type="text" name="nome" id="nome"  class="inputUser" minlength="10" maxlength="40">
+                    <label for="nome">Nome</label>
 
-            <p>
-                <label for="empresa">
+                </div>
+                <br>
+                <div class="inputBox" class="labelInput">
 
-                    Empresa <input type="text" name="iemp" id="emp" required placeholder="Orion" minlength="5" maxlength="30">
+                    <input type="email" name="email" id="email" class="inputUser"  minlength="8" maxlength="40">
+                    <label for="email">E-mail</label>
 
-                </label>
-            </p>
+                </div>
+                <br>
+                <div class="inputBox" class="labelInput">
 
-            <p>
-                <label for="motivo">
+                    <input type="text" name="Empresa" id="Empresa" class="inputUser" >
+                    <label for="empresa">Empresa</label>
 
-                    Motivo <input type="text" name="imoti" id="moti"  placeholder="quero um agendamento" minlength="30" maxlength="1000" required>
+                </div>
+                <br>
+                <div class="inputBox" class="labelInput">
 
-                </label>
-            </p>
+                    <input type="text" name="moti" id="moti" class="inputUser"  maxlength="500">
+                    <label for="chamado" >Chamado</label>
 
-            <input type="submit" value="Enviar">
-            <input type="reset" value="Limpar">
+                </div>
+
+                <br>
+                <br>
+                <br>
+
+                <a href="enviado.html">
+                    <input type="button" name="submit" id="submit" value="Enviar">
+                </a>
+
+            </fieldset>
 
         </form>
 
-    </main>
+    </div>
 
 </body>
 </html>
