@@ -6,71 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agendamento</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <script type="text/javascript" src="src/calendario.js"></script>
 </head>
 <body>
 
     <header>
-        
         <div>
             <a href="https://www.consultoriaorion.com/">
-                <p><b>PAGINA INICIAL</b></p>
+                <img src="img/logo200.png" alt="Logo do site">
             </a>
+            
         </div>
     </header>
 
-    <div class="box">
+    <main>
+        <div class="box">
+            <form action="" method="post" autocomplete="off">
+                <fieldset>
+                    <legend>
+                        <b>Agendamento</b>
+                    </legend>
+                    <br>
+                    <div class="inputBox" class="labelInput">
+                        <input type="text" name="nome" id="nome"  class="inputUser" minlength="10" maxlength="40" required>
+                        <label for="nome">Nome</label>
+                    </div>
+                    <br>
+                    <div class="inputBox" class="labelInput">
+                        <input type="email" name="email" id="email" class="inputUser"  minlength="8" maxlength="40"  required>
+                        <label for="email">E-mail</label>
+                    </div>
+                    <br>
+                    <div class="inputBox" class="labelInput">
+                        <input type="text" name="Empresa" id="Empresa" class="inputUser"  required>
+                        <label for="empresa">Empresa</label>
+                    </div>
+                    <br>
+                    <div class="inputBox" class="labelInput">
+                        <input type="text" name="moti" id="moti" class="inputUser"  maxlength="500" required>
+                        <label for="chamado" >Chamado</label>
+                    </div>
+                    <br>
+                    <div class="inputBox" class="labelInput">
+                        <input type="date" name="date" id="date" class="date"  maxlength="500" required>
+                        <label for="chamado" >Data de atendimento</label>
+                    </div>
 
-        <form action="" method="post" autocomplete="off">
+                    <br>
+                    <br>
+                    <br>
+                    <a href="enviado.html">
+                        <input type="submit" name="submit" id="submit" value="Enviar">
+                    </a>
+                </fieldset>
+            </form>
+        </div>
+    </main>
 
-            <fieldset>
-
-                <legend>
-                    <b>Agendamento</b>
-                </legend>
-
-                <br>
-
-                <div class="inputBox" class="labelInput">
-
-                    <input type="text" name="nome" id="nome"  class="inputUser" minlength="10" maxlength="40">
-                    <label for="nome">Nome</label>
-
-                </div>
-                <br>
-                <div class="inputBox" class="labelInput">
-
-                    <input type="email" name="email" id="email" class="inputUser"  minlength="8" maxlength="40">
-                    <label for="email">E-mail</label>
-
-                </div>
-                <br>
-                <div class="inputBox" class="labelInput">
-
-                    <input type="text" name="Empresa" id="Empresa" class="inputUser" >
-                    <label for="empresa">Empresa</label>
-
-                </div>
-                <br>
-                <div class="inputBox" class="labelInput">
-
-                    <input type="text" name="moti" id="moti" class="inputUser"  maxlength="500">
-                    <label for="chamado" >Chamado</label>
-
-                </div>
-
-                <br>
-                <br>
-                <br>
-
-                <a href="enviado.html">
-                    <input type="button" name="submit" id="submit" value="Enviar">
-                </a>
-
-            </fieldset>
-
-        </form>
-
-    </div>
 
 </body>
 </html>
